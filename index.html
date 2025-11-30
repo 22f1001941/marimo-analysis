@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report — Reveal.js</title>
+
+  <!-- Reveal.js core CSS (CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/white.css" id="theme">
+
+  <!-- Highlight.js for code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Custom styling */
+    .reveal .slides section h1 { color: #0b5fff; }
+    .email { font-size: 0.95rem; color: #444; }
+    /* Make fragments a bit smoother */
+    .fragment { transition: opacity 300ms ease-in-out, transform 200ms ease-in-out; }
+  </style>
+</head>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title slide (HTML) -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <h3>Executive Presentation</h3>
+        <p class="email">Contact: 22f1001941@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Welcome — quick intro. Mention high-level takeaways first before diving into metrics.
+        </aside>
+      </section>
+
+      <!-- Markdown slide: uses reveal.js markdown plugin (see data-markdown) -->
+      <section data-markdown>
+        <script type="text/template">
+## Key Agenda (Markdown slide)
+
+- Overview of revenue & expenses  
+- Segment performance  
+- Guidance & next steps
+        </script>
+        <aside class="notes">
+          Talk through the agenda. Note expected time for each section.
+        </aside>
+      </section>
+
+      <!-- Slide with fragments (animated elements) -->
+      <section>
+        <h2>Highlights (Animated)</h2>
+        <ul>
+          <li class="fragment">Revenue up 6% QoQ</li>
+          <li class="fragment">Operating margin improved by 120 bps</li>
+          <li class="fragment">Customer acquisition cost reduced in digital channels</li>
+        </ul>
+        <aside class="notes">
+          Emphasize the initiatives (pricing, channel optimization) behind each bullet.
+        </aside>
+      </section>
+
+      <!-- Slide with code sample (syntax highlighting) -->
+      <section>
+        <h2>Example: Simple revenue CAGR calculator (Python)</h2>
+        <pre><code class="language-python">
+def cagr(beginning_value, ending_value, periods):
+    return (ending_value / beginning_value) ** (1/periods) - 1
+
+print(f"CAGR: {cagr(100, 130, 3):.2%}")
+        </code></pre>
+        <aside class="notes">
+          Explain CAGR and why it's useful for measuring multi-period growth.
+        </aside>
+      </section>
+
+      <!-- Slide with equations (MathJax) -->
+      <section>
+        <h2>Financial Formulae</h2>
+        <p>
+          Present value of expected cash flows:
+        </p>
+        <p>
+          \( PV = \sum_{t=1}^{T} \dfrac{CF_t}{(1+r)^t} \)
+        </p>
+        <p>
+          Weighted Average Cost of Capital (WACC):
+        </p>
+        <p>
+          \( \text{WACC} = \dfrac{E}{V} r_e + \dfrac{D}{V} r_d (1 - \tau) \)
+        </p>
+        <aside class="notes">
+          Mention that discount rates reflect risk and capital structure.
+        </aside>
+      </section>
+
+      <!-- Slide with a simple table / numbers -->
+      <section>
+        <h2>Quarterly P&L (Summary)</h2>
+        <table>
+          <thead>
+            <tr><th>Metric</th><th>Q2</th><th>Q3</th><th>Q4</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Revenue</td><td>$120M</td><td>$127M</td><td>$135M</td></tr>
+            <tr><td>Op. Margin</td><td>12%</td><td>13%</td><td>13.2%</td></tr>
+          </tbody>
+        </table>
+        <aside class="notes">
+          Call out drivers by segment and geography.
+        </aside>
+      </section>
+
+      <!-- Closing slide -->
+      <section>
+        <h2>Thank you</h2>
+        <p class="email">Contact: 22f1001941@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Q&A guidance — have backup slides for deep-dive metrics.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js and plugins (CDN) -->
+  <script src="https://unpkg.com/reveal.js@4/dist/reveal.js"></script>
+
+  <!-- Plugins -->
+  <script src="https://unpkg.com/reveal.js@4/plugin/markdown/markdown.js"></script>
+  <script src="https://unpkg.com/reveal.js@4/plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@4/plugin/highlight/highlight.js"></script>
+
+  <!-- Highlight.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+  <!-- MathJax (for LaTeX rendering) -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <script>
+    // Initialize Reveal
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ],
+      markdown: {
+        smartypants: true
+      },
+      // Fragment animation settings
+      fragments: true,
+      // Show slide numbers (bottom-right)
+      slideNumber: true,
+      // Center slides
+      center: true
+    });
+
+    // Initialize highlight.js for code blocks
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+      });
+    });
+  </script>
+</body>
+</html>
