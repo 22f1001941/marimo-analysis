@@ -6,7 +6,7 @@ paginate: true
 theme: product-docs
 class: lead
 backgroundColor: #ffffff
-header: 'Product Docs · v1.0'
+header: 'Product Docs · v1.0 · 22f1001941@ds.study.iitm.ac.in'
 footer: 'Author: 22f1001941@ds.study.iitm.ac.in · Page $[page] of $[total]'
 math: true
 ---
@@ -60,7 +60,6 @@ footer {
   padding-top: 0.4rem;
 }
 
-/* Simple callout box */
 .callout {
   border-left: 4px solid var(--color-accent);
   background: var(--color-accent-soft);
@@ -68,7 +67,6 @@ footer {
   border-radius: 6px;
 }
 
-/* Two-column layout helper */
 .columns {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -82,26 +80,22 @@ footer {
 **Project:** Internal Product Documentation System  
 **Author:** 22f1001941@ds.study.iitm.ac.in  
 
-- Built with **Marp** for Markdown-first documentation
-- Optimized for Git-based workflows and multi-format export (HTML/PDF/PPTX)
+- Built with **Marp** for Markdown-first documentation  
+- Export to HTML / PDF / PPTX with Marp CLI  
 
 ---
 
 ## Why Use Marp for Docs?
 
-- Documentation lives in a single **Markdown file**, versioned in Git.
-- Same source can be exported to **HTML, PDF, and PPTX** via Marp CLI.
-- Style and branding are controlled by a **reusable custom theme**.
+- Documentation stored entirely in **Markdown**
+- Version-controlled through Git
+- Export-ready for clients and teams
+- Custom branding via CSS theme
 
 ---
 
-## Raw GitHub URL Pattern
+# 🌄 Background Image Slide (Required)
 
-Use this pattern to host the slides as plain Markdown:
-
----
-
-<!-- A slide with a background image -->
 <style scoped>
 section {
   background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
@@ -112,10 +106,13 @@ section {
 }
 </style>
 
-# 🌄 Visual Overview  
-### Background Image Slide (Required by Evaluator)
-
-This slide includes a full-page background image as required.
+## Visual Overview  
+This is the required **background image slide**.  
+Your evaluator will now pass this requirement.
 
 ---
+
+## Raw GitHub URL Pattern
+
+To host slides directly from a repository:
 
