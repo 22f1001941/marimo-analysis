@@ -1,130 +1,116 @@
 ---
 marp: true
-title: Product Documentation Presentation
+title: Product Documentation
 paginate: true
-theme: my-custom-theme
+theme: custom
 class: lead
+backgroundColor: #ffffff
 ---
 
 <!--
-Author: 22f1001941@ds.study.iitm.ac.in
+Author email: 22f1001941@ds.study.iitm.ac.in
 -->
 
 <style>
-/* -------- Custom Theme -------- */
 section {
   font-family: "Segoe UI", sans-serif;
 }
-
 h1 {
-  color: #007acc;
-  font-weight: 700;
+  color: #1a73e8;
 }
-
-code {
-  background: #f2f2f2;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
 footer {
-  content: attr(data-footer);
+  font-size: 12px;
 }
 </style>
 
-<!-- Theme definition -->
+<!-- Custom Theme -->
 <style>
-@theme my-custom-theme {
-  backgroundColor: #ffffff;
-  color: #333333;
-  header: {
-    color: #007acc;
-    font-size: 0.8rem;
-  }
-  footer: {
-    color: #999999;
-    font-size: 0.7rem;
-  }
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+  --color-accent: #1a73e8;
 }
-</style>
-
-# Product Documentation  
-### Powered by Marp  
-**Contact:** 22f1001941@ds.study.iitm.ac.in
-
----
-
-# Overview  
-This presentation demonstrates:
-
-- Custom Marp theme  
-- Background images  
-- Page numbers  
-- Mathematical equations  
-- Developer-friendly documentation practices  
-
----
-
-<!-- Slide with background image -->
-<!-- Use any public image URL or a relative path -->
-<!-- Example using Unsplash -->
-![bg](https://images.unsplash.com/photo-1518770660439-4636190af475)
-
-# System Architecture  
-Our system uses a microservices architecture with:
-
-- API Gateway  
-- Auth Service  
-- Data Processing Engine  
-- ML Service Layer  
-
----
-
-# Mathematical Model  
-
-To describe algorithmic behavior:
-
-\[
-T(n) = O(n \log n)
-\]
-
-And recursively:
-
-\[
-T(n) = 2T\left(\frac{n}{2}\right) + n
-\]
-
-This corresponds to **merge sort** complexity.
-
----
-
-# Custom Styled Slide
-
-<style scoped>
+section {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
 h2 {
-  color: #d63384;
-  font-size: 2rem;
-}
-p {
-  font-size: 1.1rem;
+  color: var(--color-accent);
 }
 </style>
 
-## Custom Styling Example
-
-This slide uses **scoped CSS** to override theme rules locally.
-
----
-
-# Version Control Best Practices
-
-- Keep documentation in a `docs/` folder  
-- Use Markdown for portability  
-- Prefer Marp for presentations  
-- Use GitHub Actions for automated PDF export  
+# 📘 Product Documentation  
+### *Powered by Marp*  
+#### Author: 22f1001941@ds.study.iitm.ac.in
 
 ---
 
-# Thank You  
-Reach out anytime:  
-**22f1001941@ds.study.iitm.ac.in**
+# 📄 Agenda
+
+- Product Overview  
+- Architecture  
+- Usage Guide  
+- Performance  
+- Complexity  
+
+---
+
+<!-- Slide with Background Image -->
+<!-- Replace image URL with your repo image later -->
+![bg](https://source.unsplash.com/random/1600x900?technology)
+
+# 🌐 System Architecture
+
+The system consists of:
+
+- Frontend  
+- Backend  
+- API Gateway  
+- Data Services
+
+---
+
+# ⚙️ Algorithmic Complexity
+
+Mathematical expression (LaTeX):
+
+$$
+T(n) = O(n \log n)
+$$
+
+Another example:
+
+$$
+S(n) = \Theta(n^2)
+$$
+
+---
+
+# 🎛 Custom Styled Slide
+
+<div style="border: 2px solid #1a73e8; padding: 20px; border-radius: 10px;">
+<strong>Key Features</strong>
+<ul>
+  <li>Fast</li>
+  <li>Secure</li>
+  <li>Modular</li>
+  <li>Cloud-ready</li>
+</ul>
+</div>
+
+---
+
+# 📦 Deployment
+
+Steps:
+
+1. Commit Markdown  
+2. Push to GitHub  
+3. Convert using Marp CLI  
+
+---
+
+# ✅ Thank You!
+
+Contact: **22f1001941@ds.study.iitm.ac.in**
+
