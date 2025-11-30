@@ -1,92 +1,101 @@
 ---
 marp: true
-title: Product Documentation
+title: Product Documentation with Marp
+description: Maintainable product documentation slides for a software product
 paginate: true
-theme: custom
+theme: product-docs
+class: lead
+backgroundColor: #ffffff
+header: 'Product Docs · v1.0'
+footer: 'Author: 22f1001941@ds.study.iitm.ac.in · Page $[page] of $[total]'
+math: true
 ---
 
-<!-- Author email: 22f1001941@ds.study.iitm.ac.in -->
-
 <style>
-section {
-  font-family: "Segoe UI", sans-serif;
-}
-h1 {
-  color: #1a73e8;
-}
-</style>
+/* -------------------------------
+   Custom Marp Theme in-slide
+   ------------------------------- */
+/* @theme product-docs */
 
-# Product Documentation  
-### 22f1001941@ds.study.iitm.ac.in
-
----
-
-<!-- Custom Theme injected using Marp CSS variables -->
-<style>
 :root {
-  --color-background: #ffffff;
-  --color-foreground: #222222;
+  --color-bg: #ffffff;
+  --color-fg: #202124;
   --color-accent: #1a73e8;
+  --color-accent-soft: #e8f0fe;
+  --color-border: #dadce0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 28px;
 }
+
 section {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background: var(--color-bg);
+  color: var(--color-fg);
+  padding: 2.5rem 3.5rem;
 }
-h2 {
+
+h1,
+h2,
+h3 {
   color: var(--color-accent);
+  font-weight: 650;
+}
+
+section.lead h1 {
+  font-size: 2.6rem;
+}
+
+code,
+pre {
+  font-family: "Fira Code", "JetBrains Mono", ui-monospace, SFMono-Regular,
+    Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+footer {
+  font-size: 0.5em;
+  color: #5f6368;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.4rem;
+}
+
+/* Simple callout box */
+.callout {
+  border-left: 4px solid var(--color-accent);
+  background: var(--color-accent-soft);
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+}
+
+/* Two-column layout helper */
+.columns {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.6rem;
+  align-items: start;
 }
 </style>
 
-# Agenda
+# 📘 Product Documentation Slides
 
-- Overview  
-- Architecture  
-- Features  
-- Complexity  
+**Project:** Internal Product Documentation System  
+**Author:** 22f1001941@ds.study.iitm.ac.in  
 
----
-
-<!-- Background Image Slide -->
-![bg](https://source.unsplash.com/1600x900?technology)
-
-# System Architecture
-
-Components:
-
-- UI  
-- API  
-- Database  
-- Deployment pipeline  
+- Built with **Marp** for Markdown-first documentation
+- Optimized for Git-based workflows and multi-format export (HTML/PDF/PPTX)
 
 ---
 
-# Algorithmic Complexity
+## Why Use Marp for Docs?
 
-Using LaTeX math:
-
-$$
-T(n) = O(n \log n)
-$$
-
-$$
-S(n) = \Theta(n^2)
-$$
+- Documentation lives in a single **Markdown file**, versioned in Git.
+- Same source can be exported to **HTML, PDF, and PPTX** via Marp CLI.
+- Style and branding are controlled by a **reusable custom theme**.
 
 ---
 
-# Styled Info Box
+## Raw GitHub URL Pattern
 
-<div style="border: 2px solid #1a73e8; padding: 20px; border-radius: 10px;">
-<strong>Key Features</strong>
-<ul>
-  <li>Scalable</li>
-  <li>Modular</li>
-  <li>Optimized</li>
-</ul>
-</div>
+Use this pattern to host the slides as plain Markdown:
 
----
-
-# Thank You!
-
-📧 **22f1001941@ds.study.iitm.ac.in**
