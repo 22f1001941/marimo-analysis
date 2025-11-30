@@ -3,13 +3,9 @@ marp: true
 title: Product Documentation
 paginate: true
 theme: custom
-class: lead
-backgroundColor: #ffffff
 ---
 
-<!--
-Author email: 22f1001941@ds.study.iitm.ac.in
--->
+<!-- Author email: 22f1001941@ds.study.iitm.ac.in -->
 
 <style>
 section {
@@ -18,16 +14,18 @@ section {
 h1 {
   color: #1a73e8;
 }
-footer {
-  font-size: 12px;
-}
 </style>
 
-<!-- Custom Theme -->
+# Product Documentation  
+### 22f1001941@ds.study.iitm.ac.in
+
+---
+
+<!-- Custom Theme injected using Marp CSS variables -->
 <style>
 :root {
   --color-background: #ffffff;
-  --color-foreground: #333333;
+  --color-foreground: #222222;
   --color-accent: #1a73e8;
 }
 section {
@@ -39,46 +37,36 @@ h2 {
 }
 </style>
 
-# 📘 Product Documentation  
-### *Powered by Marp*  
-#### Author: 22f1001941@ds.study.iitm.ac.in
+# Agenda
 
----
-
-# 📄 Agenda
-
-- Product Overview  
+- Overview  
 - Architecture  
-- Usage Guide  
-- Performance  
+- Features  
 - Complexity  
 
 ---
 
-<!-- Slide with Background Image -->
-<!-- Replace image URL with your repo image later -->
-![bg](https://source.unsplash.com/random/1600x900?technology)
+<!-- Background Image Slide -->
+![bg](https://source.unsplash.com/1600x900?technology)
 
-# 🌐 System Architecture
+# System Architecture
 
-The system consists of:
+Components:
 
-- Frontend  
-- Backend  
-- API Gateway  
-- Data Services
+- UI  
+- API  
+- Database  
+- Deployment pipeline  
 
 ---
 
-# ⚙️ Algorithmic Complexity
+# Algorithmic Complexity
 
-Mathematical expression (LaTeX):
+Using LaTeX math:
 
 $$
 T(n) = O(n \log n)
 $$
-
-Another example:
 
 $$
 S(n) = \Theta(n^2)
@@ -86,31 +74,19 @@ $$
 
 ---
 
-# 🎛 Custom Styled Slide
+# Styled Info Box
 
 <div style="border: 2px solid #1a73e8; padding: 20px; border-radius: 10px;">
 <strong>Key Features</strong>
 <ul>
-  <li>Fast</li>
-  <li>Secure</li>
+  <li>Scalable</li>
   <li>Modular</li>
-  <li>Cloud-ready</li>
+  <li>Optimized</li>
 </ul>
 </div>
 
 ---
 
-# 📦 Deployment
+# Thank You!
 
-Steps:
-
-1. Commit Markdown  
-2. Push to GitHub  
-3. Convert using Marp CLI  
-
----
-
-# ✅ Thank You!
-
-Contact: **22f1001941@ds.study.iitm.ac.in**
-
+📧 **22f1001941@ds.study.iitm.ac.in**
